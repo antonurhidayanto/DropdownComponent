@@ -19,8 +19,7 @@ const MultiSelectDropdown = ({
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
-  // Filter opsi berdasarkan pencarian
-// Jika search diaktifkan, gunakan filter; jika tidak, tampilkan semua opsi
+  // Filter opsi berdasarkan pencarian Jika search diaktifkan, gunakan filter; jika tidak, tampilkan semua opsi
 const filteredOptions = filterOptions && searchEnabled
   ? options.filter(option => option.label.toLowerCase().includes(searchTerm.toLowerCase()))
   : options; // Jika filterOptions = false, tampilkan semua opsi
