@@ -110,9 +110,9 @@ const filteredOptions = filterOptions && searchEnabled
   return (
     <div className='dropdown-container'>
         <label htmlFor="label" className="label">{label}: </label>
-        <div className="multi-select-container" ref={dropdownRef}>
+        <div className="selectcontainer" ref={dropdownRef}>
         {/* HEADER: Menampilkan item terpilih */}
-        <div className={`multi-select-header ${outline ? '':'outline'}`} onClick={toggleDropdown}>
+        <div className={`selectheader ${outline ? '':'outline'}`} onClick={toggleDropdown}>
             {isMultiple ? (
             selectedOptions.length > 0 ? (
             <div className="selected-items">
@@ -146,16 +146,16 @@ const filteredOptions = filterOptions && searchEnabled
 
         {/* DROPDOWN MENU */}
         {showDropdown && (
-            <div className="multi-select-dropdown">
+            <div className="selectdropdown">
             {/* INPUT SEARCH */}
             {searchEnabled && (
-                <div className="multi-select-search-container">
+                <div className="selectsearch-container">
                     <svg className="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g className="search-path" fill="none" stroke="#848F91"><path strokeLinecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
                     <input
                     type="text"
                     value={searchTerm}
                     onChange={handleSearchChange}
-                    className="multi-select-search"
+                    className="selectsearch"
                     />
                     <hr/>
                 </div>
@@ -163,7 +163,7 @@ const filteredOptions = filterOptions && searchEnabled
 
             {/* SELECT ALL BUTTON */}
             {selectAllEnabled ? (
-                <div className="multi-select-option select-all" onClick={handleSelectAll}>
+                <div className="selectoption select-all" onClick={handleSelectAll}>
                 <input
                     type="checkbox"
                     checked={selectedOptions.length === options.length}
@@ -176,12 +176,12 @@ const filteredOptions = filterOptions && searchEnabled
                 </div>} 
 
             {/* LIST OPTIONS */}
-            <div className="multi-select-options">
+            <div className="selectoptions">
                 {filteredOptions.length > 0 ? (
                 filteredOptions.map(option => (
                     <div
                     key={option.value}
-                    className={`multi-select-option ${isMultiple && (selectedOptions || []).some(item => item.value === option.value) ? 'selected' : (selectedOptions?.value === option.value ? 'selected' : '')}`}
+                    className={`selectoption ${isMultiple && (selectedOptions || []).some(item => item.value === option.value) ? 'selected' : (selectedOptions?.value === option.value ? 'selected' : '')}`}
                     onClick={() => handleOptionSelect(option)}
                     >
                     {isMultiple && (
