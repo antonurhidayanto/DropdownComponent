@@ -23,7 +23,7 @@ This project was created by **Nurhidayanto** to test and showcase UI components 
    ```
 3. **Run Storybook in local**
 ```sh
-   npx storybook init
+   npm run storybook
    ```
 
 ---
@@ -51,7 +51,7 @@ Proyek ini dibuat oleh **Nurhidayanto** untuk menguji dan menampilkan komponen m
    ```
 3. **Jalankan Storybook di lokal**
 ```sh
-   npx storybook init
+   npm run storybook
    ```
 
 
