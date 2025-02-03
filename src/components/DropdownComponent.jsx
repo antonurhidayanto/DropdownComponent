@@ -199,7 +199,7 @@ const filteredOptions = filterOptions && searchEnabled
                 <div className="no-options">No options found</div>
                 )}
             </div>
-            </div>
+          </div>
         )}
         </div>
     </div>
