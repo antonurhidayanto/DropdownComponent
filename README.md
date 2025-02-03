@@ -35,9 +35,9 @@ This project was created by **Nurhidayanto** to test and showcase UI components 
 ```sh
    npm run dev
    ```
-3. **Run Storybook**
+3. **Run Storybook in local**
 ```sh
-   npm run storybook
+   npx storybook init
    ```
 
 ---
@@ -63,9 +63,9 @@ Proyek ini dibuat oleh **Nurhidayanto** untuk menguji dan menampilkan komponen m
 ```sh
    npm run dev
    ```
-3. **Jalankan Storybook**
+3. **Jalankan Storybook di lokal**
 ```sh
-   npm run storybook
+   npx storybook init
    ```
 
 

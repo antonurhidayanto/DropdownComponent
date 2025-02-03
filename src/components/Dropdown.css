@@ -204,7 +204,7 @@
 .selected-items {
     display: flex;
     gap: 5px;
-    padding: 5px;
+    padding: 5px 0px 5px 5px;
   }
   
   /* Style untuk item yang sudah dipilih */
@@ -214,7 +214,7 @@
     padding: 5px 10px;
     border-radius: 5px;
     margin-right: 5px;
-    font-size: 12px;
+    font-size: 14px;
     display: block;
     align-items: center;
   }

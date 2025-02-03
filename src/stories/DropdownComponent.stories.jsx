@@ -26,7 +26,7 @@ export const DropdownComponent = {
       { label: 'Long Long Long Long Option 5', value: 'Long Long Long Long Option 5' },
       { label: 'Long Long Long Long Long Option 6', value: 'Long Long Long Long Long Option 6' },
     ],
-    placeholder: 'Select items',
+    placeholder: "",
     searchEnabled: true,
     selectAllEnabled: false,
     maxSelections: 6,
