@@ -46,7 +46,7 @@
     cursor: pointer;
     /* justify-content: space-between; */
     border-radius: 5px;
-    /* padding: 8px; */
+    padding: 0 5px;
     /* margin-right: 20px; */
   }
   
@@ -204,7 +204,7 @@
 .selected-items {
     display: flex;
     gap: 5px;
-    padding: 5px 0px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
   
   /* Style untuk item yang sudah dipilih */
