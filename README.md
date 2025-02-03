@@ -1,5 +1,3 @@
-
-
 # Technical Test
 
 This project was created by **Nurhidayanto** to test and showcase UI components using Storybook.
