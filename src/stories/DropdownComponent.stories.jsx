@@ -12,29 +12,9 @@ export default {
     label: { control: 'text' },
     filterOptions: { control: 'boolean' },
     isMultiple: { control: 'boolean' },
+    outline: { control: 'boolean' },
   },
 };
-
-// const Template = (args) => <MultiSelectDropdown {...args} />;
-
-// export const DropdownComponent = Template.bind({});
-// DropdownComponent.args = {
-//   options: [
-//     { label: 'Option 1', value: 'Option 1' },
-//     { label: 'Option With Icon', value: 'Option With Icon' },
-//     { label: 'Long Long Option 3', value: 'Long Long Option 3' },
-//     { label: 'Long Long Long Option 4', value: 'Long Long Long Option 4' },
-//     { label: 'Long Long Long Long Option 5', value: 'Long Long Long Long Option 5' },
-//     { label: 'Long Long Long Long Long Option 6', value: 'Long Long Long Long Long Option 6' },
-//   ],
-//   placeholder: 'Select items',
-//   searchEnabled: true, 
-//   selectAllEnabled: false, 
-//   maxSelections: 6,
-//   label:'Label',
-//   filterOptions: true,
-//   isMultiple: true
-// };
 
 export const DropdownComponent = {
   args: {
@@ -53,6 +33,7 @@ export const DropdownComponent = {
     label: "Label",
     filterOptions: false,
     isMultiple: true,
+    outline: true
   },
 };
 

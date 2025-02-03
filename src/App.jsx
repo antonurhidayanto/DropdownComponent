@@ -18,10 +18,9 @@ const App = () => {
   };
  
   return (
-    // <div className="app">
+   <>
       <MultiSelectDropdown
         label={"Dropdown"}
-        placeholder="Select items"
         options={options}
         isSearchable={true}
         selectAllEnabled={true}
@@ -30,7 +29,7 @@ const App = () => {
         filterOptions={false}
         onChange={handleSelectionChange}
       />
-    // </div>
+    </>
   )
 };
 

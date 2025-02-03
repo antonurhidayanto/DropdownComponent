@@ -11,6 +11,7 @@ const MultiSelectDropdown = ({
   isMultiple = true,
   filterOptions = false,
   onChange,
+  outline = true,
   ...props
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -112,7 +113,7 @@ const filteredOptions = filterOptions && searchEnabled
         <label htmlFor="label" className="label">{label}: </label>
         <div className="multi-select-container" ref={dropdownRef}>
         {/* HEADER: Menampilkan item terpilih */}
-        <div className="multi-select-header" onClick={toggleDropdown}>
+        <div className={`multi-select-header ${outline ? '':'outline'}`} onClick={toggleDropdown}>
             {isMultiple ? (
             selectedOptions.length > 0 ? (
             <div className="selected-items">
