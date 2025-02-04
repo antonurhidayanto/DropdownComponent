@@ -6,13 +6,38 @@ export default {
   component: MultiSelectDropdown,
   tags: ['autodocs'],
   argTypes: {
-    searchEnabled: { control: 'boolean' }, // Bisa diaktifkan/nonaktifkan di UI Storybook
-    selectAllEnabled: { control: 'boolean' }, // Bisa diaktifkan/nonaktifkan di UI
-    maxSelections: { control: { type: 'number', min: 0, max: 10 } }, // Bisa diatur di UI
-    label: { control: 'text' },
-    filterOptions: { control: 'boolean' },
-    isMultiple: { control: 'boolean' },
-    outline: { control: 'boolean' },
+    placeholder: {
+      control: 'text',
+      description: 'The placeholder text that appears within the dropdown when no option is selected.'
+    },
+    searchEnabled: {
+      control: 'boolean',
+      description: 'Enable or disable the search functionality within the dropdown.'
+    },
+    selectAllEnabled: {
+      control: 'boolean',
+      description: 'Allow users to select all options with one click.'
+    },
+    maxSelections: {
+      control: { type: 'number', min: 0, max: 10 },
+      description: 'The maximum number of items that can be selected.'
+    },
+    label: {
+      control: 'text',
+      description: 'The label that appears next to the dropdown.'
+    },
+    filterOptions: {
+      control: 'boolean',
+      description: 'Enable or disable filtering of options based on search text.'
+    },
+    isMultiple: {
+      control: 'boolean',
+      description: 'Set to true to allow multiple selections. False for single selection.'
+    },
+    outline: {
+      control: 'boolean',
+      description: 'Enable or disable the outline styling for the dropdown.'
+    },
   },
 };
 

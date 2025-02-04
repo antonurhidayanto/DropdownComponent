@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 import './Dropdown.css';
 
 const MultiSelectDropdown = ({
@@ -205,6 +206,17 @@ const filteredOptions = filterOptions && searchEnabled
         </div>
     </div>
   );
+};
+
+MultiSelectDropdown.propTypes = {
+  placeholder: PropTypes.string.isRequired,
+  searchEnabled: PropTypes.bool,
+  selectAllEnabled: PropTypes.bool,
+  maxSelections: PropTypes.number,
+  label: PropTypes.string,
+  filterOptions: PropTypes.bool,
+  isMultiple: PropTypes.bool,
+  outline: PropTypes.bool,
 };
 
 export default MultiSelectDropdown;
