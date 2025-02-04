@@ -85,7 +85,7 @@ const filteredOptions = filterOptions && searchEnabled
   }, []);
 
   useEffect(() => {
-        setSelectedOptions(isMultiple ? [] : ''); // Kosongkan input ketika berubah ke single select
+        setSelectedOptions(isMultiple ? [] : ''); 
   }, [isMultiple]);
 
   // Fungsi untuk menampilkan teks yang di-highlight dalam pencarian
@@ -122,6 +122,7 @@ const filteredOptions = filterOptions && searchEnabled
                     <span className="remove-item" onClick={(e) => {
                     e.stopPropagation();
                     removeSelectedItem(option);
+                    setSelectedOptions('')
                     }}>×</span>
                 </div>
                 ))}
@@ -136,6 +137,7 @@ const filteredOptions = filterOptions && searchEnabled
                         <span className="remove-item" onClick={(e) => {
                         e.stopPropagation();
                         removeSelectedItem(selectedOptions);
+                        setSelectedOptions('')
                         }}>×</span>
                     </div>
                 ) : (
